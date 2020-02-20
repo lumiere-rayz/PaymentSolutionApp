@@ -28,6 +28,7 @@ namespace PaymentSolutionApp.Models
         }
     
         public virtual DbSet<UserProfile> UserProfiles { get; set; }
+        public virtual DbSet<Log> Logs { get; set; }
     
         public virtual int sp_UpdateUserProfile(Nullable<int> userID, string userName, string firstName, string lastName, string address, string city, string country, string email, string company, string aboutMe, Nullable<int> postalCode)
         {

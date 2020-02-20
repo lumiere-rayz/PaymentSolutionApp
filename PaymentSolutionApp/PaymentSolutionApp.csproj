@@ -171,6 +171,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LogController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\UserProfilesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -178,6 +179,9 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Log.cs">
+      <DependentUpon>UserModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\UserModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -445,6 +449,33 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Scripts\bootstrap.js" />
+    <Content Include="Scripts\Scripts\bootstrap.min.js" />
+    <None Include="Scripts\Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\Scripts\jquery-ui-1.12.1.min.js" />
+    <None Include="Scripts\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Scripts\jquery.validate.js" />
+    <Content Include="Scripts\Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Scripts\js\dataTables.bootstrap.js" />
+    <Content Include="Scripts\Scripts\js\dataTables.bootstrap.min.js" />
+    <Content Include="Scripts\Scripts\js\dataTables.bootstrap4.js" />
+    <Content Include="Scripts\Scripts\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Scripts\Scripts\js\dataTables.foundation.js" />
+    <Content Include="Scripts\Scripts\js\dataTables.foundation.min.js" />
+    <Content Include="Scripts\Scripts\js\dataTables.jqueryui.js" />
+    <Content Include="Scripts\Scripts\js\dataTables.jqueryui.min.js" />
+    <Content Include="Scripts\Scripts\js\dataTables.semanticui.js" />
+    <Content Include="Scripts\Scripts\js\dataTables.semanticui.min.js" />
+    <Content Include="Scripts\Scripts\js\jquery.dataTables.js" />
+    <Content Include="Scripts\Scripts\js\jquery.dataTables.min.js" />
+    <Content Include="Scripts\Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -485,6 +516,9 @@
     <Content Include="Views\UserProfiles\Details.cshtml" />
     <Content Include="Views\UserProfiles\Edit.cshtml" />
     <Content Include="Views\UserProfiles\Index.cshtml" />
+    <Content Include="Views\Log\Index.cshtml" />
+    <Content Include="Scripts\Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\Scripts\jquery-3.4.1.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
